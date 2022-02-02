@@ -1,0 +1,525 @@
+/*Smartphone*/
+
+@media screen and (max-width: 480px) {
+
+   #gridAreas {
+      display: grid;
+      grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+      grid-template-columns: 100%;
+
+   }
+
+   
+   /* general */
+   
+   body{
+      background-color: rgb(47, 49, 54);
+    }
+   
+   
+    /* header y nav */ 
+    
+    header {
+       grid-area: header;
+      }
+   
+   
+    header img {
+       padding-left: 10px;
+       padding-top: 10px;
+       width: 100px;
+    }
+   
+    nav {
+      grid-area: nav;
+      background-color: rgb(32, 34, 37);
+   
+   }
+   
+   ul {
+      display: flex;
+      justify-content: space-evenly;
+   }
+   
+   div {
+      height: 25px;
+      text-align: center;
+      font-size: large;
+      background-color: rgb(139, 9, 9);
+      color:rgb(254, 254, 254)
+   }
+   
+   /* cuerpo index */
+   
+   #cuerpoindex {
+      margin: 20px;
+   }
+   
+   main {
+      grid-area: main;
+      color: rgb(254, 254, 254);
+   }
+   
+   
+   /* footer */ 
+   
+   footer {
+       grid-area: footer;
+       display: flex;
+       background-color: rgb(32, 34, 37);
+       color:rgb(254, 254, 254);
+       flex-direction: column-reverse;
+
+      }
+     
+   
+    #redes {
+       display: flex;   
+    }
+   
+    #redes div {
+       width: 50px;
+       height: 50px;
+       margin: 10px;
+    }
+   
+    #direc {
+        padding-left: 10px;
+        padding-top: 10px;
+        display: flex;
+    }
+   
+   
+   
+   /* -----------nosotros----------- */
+   
+   
+   
+   /* -----------servicios----------- */
+    
+   .servicios-flex {
+   display:flex;
+   flex-direction: column;
+   }
+   
+   
+   .servicios-flex section {
+      padding: 20px;
+      margin: 10px;
+      border: 3px dotted rgb(32, 34, 37);
+      border-radius: 5px;
+      
+   }
+   
+   
+   
+   /* -----------vehiculos----------- */
+   
+   #gridVehiculos {
+      display: grid;
+      grid-template-areas:
+      "filtros galeria";
+      grid-template-columns: 20% auto;
+   }
+   
+   #galeria {
+      grid-area: galeria;
+   }
+
+   #menuFiltros {
+      grid-area: filtros;
+      padding-top: 10px;
+      padding-left: 10px;
+      background-color: rgb(32, 34, 37);
+   }
+   
+   #menuFiltros span {
+      display: flex;
+      flex-direction: column;
+      height: 25px;
+      margin-bottom: 100px;
+      background-color: rgb(47, 49, 54);
+   }
+   
+   #galeria img {
+      width: 40%;
+      padding: 10px;
+      align-content: space-evenly;
+   }
+   
+   /* -----------contacto----------- */
+   
+   .formulario-flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+   }
+   
+   .formulario-flex article {
+      margin-top: 30px;
+      margin-bottom: 30px;
+   }
+
+   #camioncorreo {
+      display: none;
+   }
+
+}
+
+
+
+
+
+
+
+/*Tablet*/
+
+@media screen and (min-width: 481px) and (max-width:1023px) {
+   #gridAreas {
+      display: grid;
+      grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+    }
+    
+ 
+
+
+    
+   /* general */
+   
+   body{
+      background-color: rgb(54, 57, 63);
+   }
+   
+
+
+   /* header y nav */ 
+    
+   header {
+    grid-area: header;
+   }
+
+   
+   header img {
+     padding-left: 10px;
+     padding-top: 10px;
+     width: 100px;
+    }
+   
+
+   nav {
+   grid-area: nav;
+   background-color: rgb(32, 34, 37);
+   
+   }
+   
+   ul {
+      display: flex;
+      justify-content: space-evenly;
+   }
+   
+   div {
+      width: 120px;
+      height: 25px;
+      text-align: center;
+      font-size: large;
+      background-color: rgb(139, 9, 9);
+      color:rgb(254, 254, 254)
+   }
+   
+   /* cuerpo index */
+   
+   #cuerpoindex {
+      margin: 20px;
+   }
+   
+   
+   
+   /* footer */ 
+   
+   footer {
+       grid-area: footer;
+       display: flex;
+       justify-content: space-between;
+       background-color: rgb(32, 34, 37);
+       color:rgb(254, 254, 254);
+      }
+   
+    main {
+       grid-area: main;
+       color: rgb(254, 254, 254);
+    }
+   
+   
+    #redes {
+       display: flex;
+   
+    }
+   
+    #redes div {
+       width: 50px;
+       height: 50px;
+       margin:10px;
+    }
+   
+    #direc {
+        padding-left: 10px;
+        padding-top: 10px;
+        display: flex;
+    }
+   
+   
+   
+   /* -----------nosotros----------- */
+   
+   
+   
+   /* -----------servicios----------- */
+    
+   .servicios-flex {
+   display:flex;
+   flex-direction: row;
+   }
+   
+   
+   .servicios-flex section {
+      padding: 20px;
+      margin: 10px;
+      border: 3px dotted rgb(32, 34, 37);
+      border-radius: 5px;
+      
+   }
+   
+   
+   
+   /* -----------vehiculos----------- */
+   
+   #gridVehiculos {
+      display: grid;
+      grid-template-areas:
+      "filtros galeria";
+      grid-template-columns: 20% auto;
+   }
+   
+   #galeria {
+      grid-area: galeria;
+   }
+
+   #menuFiltros {
+      grid-area: filtros;
+      padding-top: 10px;
+      padding-left: 10px;
+      background-color: rgb(32, 34, 37);
+   }
+   
+   #menuFiltros span {
+      display: flex;
+      flex-direction: column ;
+      height: 25px;
+      margin-bottom: 100px;
+      background-color: rgb(47, 49, 54);
+   }
+   
+   #galeria img {
+      width: 40%;
+      padding: 10px;
+      align-content: space-evenly;
+   }
+      
+   /* -----------contacto----------- */
+   
+   .formulario-flex {
+      display: flex;
+      flex-direction: row;
+      padding-top: 20px;
+      justify-content: space-around;
+   }
+   
+   .formulario-flex article {
+      margin-top: 30px;
+      margin-bottom: 30px;
+   }
+   
+   #camioncorreo {
+      width: 50%;
+   }
+
+}
+
+
+
+
+
+
+
+/*Escritorio*/
+
+@media screen and (min-width: 1024px){
+   #gridAreas {
+      display: grid;
+      grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "main main main"
+      "footer footer footer";
+      grid-template-columns: 10% auto 10%;
+      grid-template-rows: 120px 50px auto 225px; 
+    }
+    
+    
+   /* general */
+   
+   body{
+      background-color: rgb(54, 57, 63);
+   }
+   
+   
+    /* header y nav */ 
+    
+    header {
+       grid-area: header;
+      }
+   
+   
+    header img {
+       padding-left: 10px;
+       padding-top: 10px;
+       width: 100px;
+    }
+   
+    nav {
+      grid-area: nav;
+      background-color: rgb(32, 34, 37);
+   
+   }
+   
+   ul {
+      display: flex;
+      justify-content: space-evenly;
+   }
+   
+   div {
+      width: 120px;
+      height: 25px;
+      text-align: center;
+      font-size: large;
+      background-color: rgb(139, 9, 9);
+      color:rgb(254, 254, 254)
+   }
+   
+   /* cuerpo index */
+   
+   #cuerpoindex {
+      margin: 20px;
+   }
+   
+   
+   
+   /* footer */ 
+   
+   footer {
+       grid-area: footer;
+       display: flex;
+       justify-content: space-between;
+       background-color: rgb(32, 34, 37);
+       color:rgb(254, 254, 254);
+      }
+   
+    main {
+       grid-area: main;
+       color: rgb(254, 254, 254);
+    }
+   
+   
+    #redes {
+       display: flex;
+   
+    }
+   
+    #redes div {
+       width: 50px;
+       height: 50px;
+       margin:10px;
+    }
+   
+    #direc {
+        padding-left: 10px;
+        padding-top: 10px;
+        display: flex;
+    }
+   
+   
+   
+   /* -----------nosotros----------- */
+   
+   
+   
+   /* -----------servicios----------- */
+    
+   .servicios-flex {
+   display:flex;
+   flex-direction: row;
+   }
+   
+   
+   .servicios-flex section {
+      padding: 20px;
+      margin: 10px;
+      border: 3px dotted rgb(32, 34, 37);
+      border-radius: 5px;
+      
+   }
+   
+   
+   
+   /* -----------vehiculos----------- */
+   
+   #gridVehiculos {
+      display: grid;
+      grid-template-areas:
+      "main main main";
+      grid-template-columns: 10% auto;
+   }
+   
+   
+   #menuFiltros {
+      padding-top:10px;
+      padding-left: 10px;
+      background-color: rgb(32, 34, 37);
+   }
+   
+   #menuFiltros span {
+      display: inline-block;
+      width: 100px;
+      height: 25px;
+      margin-bottom: 100px;
+      background-color: rgb(47, 49, 54);
+   }
+   
+   #galeria img {
+      width: 200px;
+      padding: 10px;
+      align-content: space-evenly;
+   }
+   
+   /* -----------contacto----------- */
+   
+   .formulario-flex {
+      display: flex;
+      flex-direction: row;
+      padding-top: 20px;
+      justify-content: space-around;
+   }
+   
+   .formulario-flex article {
+      padding-top: 70px;
+   }
+}
+
