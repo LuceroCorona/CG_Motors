@@ -1,3 +1,206 @@
+/*Escritorio*/
+
+@media screen and (min-width: 1024px){
+   #gridAreas {
+      display: grid;
+      grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "main main main"
+      "footer footer footer";
+      grid-template-columns: 10% auto 10%;
+      grid-template-rows: 120px 50px auto 225px; 
+   }
+    
+
+
+   /* general */
+   
+   body{
+      background-color: rgb(54, 57, 63);
+      height: fit-content;
+   }
+   
+   
+   /* header y nav */ 
+    
+   header {
+       grid-area: header;
+   }
+   
+   
+   header img {
+       padding-left: 10px;
+       padding-top: 10px;
+       width: 100px;
+   }
+   
+   nav {
+      grid-area: nav;
+      background-color: rgb(32, 34, 37);
+   
+   }
+   
+   ul {
+      display: flex;
+      justify-content: space-evenly;
+   }
+   
+   nav div {
+      width: 120px;
+      height: 25px;
+      text-align: center;
+      font-size: large;
+      background-color: rgb(139, 9, 9);
+      color:rgb(254, 254, 254)
+   }
+   
+   /* cuerpo index */
+   
+   #cuerpoindex {
+      margin: 20px 50px 20px 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+   }
+   
+
+   #carouselExampleControls{
+      width: 500px;
+   }
+   
+   #cuerpoindex h6 {
+      width: 50%;
+   }
+
+   /* footer */ 
+   
+   footer {
+     grid-area: footer;
+     display: flex;
+     justify-content: space-between;
+     background-color: rgb(32, 34, 37);
+     color:rgb(254, 254, 254);
+   }
+
+
+   main {
+      grid-area: main;
+      color: rgb(254, 254, 254);
+   }
+   
+   footer div {
+      width: 120px;
+      height: 25px;
+      text-align: center;
+      font-size: large;
+      background-color: rgb(139, 9, 9);
+      color:rgb(254, 254, 254)
+   }
+
+   #redes {
+       display: flex;
+   
+   }
+   
+   #redes div {
+       width: 50px;
+       height: 50px;
+       margin:10px;
+   }
+   
+   #direc {
+        padding-left: 10px;
+        padding-top: 10px;
+        display: flex;
+   }
+   
+   
+   
+   /* -----------nosotros----------- */
+   
+  /* cuerpo nosotros */
+   
+   #cuerponosotros {
+      margin: 20px 50px 20px 50px;
+   }
+   
+   /* -----------servicios----------- */
+    
+   #cuerposervicios {
+      margin: 20px 50px 20px 50px;
+   }
+
+   .servicios-flex {
+   display:flex;
+   flex-direction: row;
+   }
+   
+   
+   .servicios-flex section {
+      padding: 20px;
+      margin: 10px;
+      border: 3px dotted rgb(32, 34, 37);
+      border-radius: 5px; 
+   }
+   
+   
+   
+   /* -----------vehiculos----------- */
+   
+   #gridVehiculos {
+      display: grid;
+      grid-template-areas:
+      "main main main";
+      grid-template-columns: 10% auto;
+   }
+   
+   
+   #menuFiltros {
+      padding-top:10px;
+      padding-left: 10px;
+      background-color: rgb(32, 34, 37);
+   }
+   
+   #menuFiltros span {
+      display: inline-block;
+      width: 100px;
+      height: 25px;
+      margin-bottom: 100px;
+      background-color: rgb(47, 49, 54);
+   }
+   
+   #galeria img {
+      width: 200px;
+      padding: 10px;
+      align-content: space-evenly;
+   }
+   
+   /* -----------contacto----------- */
+   
+
+   #cuerpoformulario {
+      margin: 20px 50px 20px 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+   }
+
+
+   #camioncorreo {
+      width: auto;
+   }
+
+}
+
+
+
+
+
+
+
+
+
 /*Smartphone*/
 
 @media screen and (max-width: 480px) {
@@ -18,24 +221,25 @@
    
    body{
       background-color: rgb(47, 49, 54);
-    }
+      height: fit-content;
+   }
    
    
-    /* header y nav */ 
+   /* header y nav */ 
     
-    header {
-       grid-area: header;
-      }
+   header {
+      grid-area: header;
+   }
    
    
-    header img {
-       padding-left: 10px;
-       padding-top: 10px;
-       width: 100px;
-    }
+   header img {
+      padding-left: 10px;
+      padding-top: 10px;
+      width: 100px;
+   }
    
-    nav {
-      grid-area: nav;
+   nav {
+      grid-area: nav; 
       background-color: rgb(32, 34, 37);
    
    }
@@ -45,7 +249,7 @@
       justify-content: space-evenly;
    }
    
-   div {
+   nav div {
       height: 25px;
       text-align: center;
       font-size: large;
@@ -59,6 +263,15 @@
       margin: 20px;
    }
    
+   #carouselExampleControls{
+      width: 100%;
+      padding-bottom: 20px;
+   }
+   
+   #cuerpoindex h6 {
+      width: 100%;
+   }
+
    main {
       grid-area: main;
       color: rgb(254, 254, 254);
@@ -74,33 +287,47 @@
        color:rgb(254, 254, 254);
        flex-direction: column-reverse;
 
-      }
+   }
      
-   
-    #redes {
+   footer div {
+      width: 120px;
+      height: 25px;
+      text-align: center;
+      font-size: large;
+      background-color: rgb(139, 9, 9);
+      color:rgb(254, 254, 254)
+   }
+
+   #redes {
        display: flex;   
-    }
+   }
    
-    #redes div {
+   #redes div {
        width: 50px;
        height: 50px;
        margin: 10px;
-    }
+   }
    
-    #direc {
+   #direc {
         padding-left: 10px;
         padding-top: 10px;
         display: flex;
-    }
+   }
    
    
    
    /* -----------nosotros----------- */
    
-   
+   #cuerponosotros {
+      margin: 25px;
+   }
    
    /* -----------servicios----------- */
     
+   #cuerposervicios {
+      margin: 25px;
+   }
+
    .servicios-flex {
    display:flex;
    flex-direction: column;
@@ -153,15 +380,8 @@
    
    /* -----------contacto----------- */
    
-   .formulario-flex {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-   }
-   
-   .formulario-flex article {
-      margin-top: 30px;
-      margin-bottom: 30px;
+   #cuerpoformulario {
+    margin: 25px;
    }
 
    #camioncorreo {
@@ -186,7 +406,7 @@
       "nav"
       "main"
       "footer";
-    }
+   }
     
  
 
@@ -194,8 +414,9 @@
     
    /* general */
    
-   body{
+   body {
       background-color: rgb(54, 57, 63);
+      height: fit-content;
    }
    
 
@@ -211,13 +432,12 @@
      padding-left: 10px;
      padding-top: 10px;
      width: 100px;
-    }
+   }
    
 
    nav {
-   grid-area: nav;
-   background-color: rgb(32, 34, 37);
-   
+      grid-area: nav;
+      background-color: rgb(32, 34, 37);
    }
    
    ul {
@@ -225,7 +445,7 @@
       justify-content: space-evenly;
    }
    
-   div {
+   nav div {
       width: 120px;
       height: 25px;
       text-align: center;
@@ -237,55 +457,82 @@
    /* cuerpo index */
    
    #cuerpoindex {
+      display: flex;
+      flex-direction: row;
       margin: 20px;
+      justify-content: space-evenly;
    }
    
+   #carouselExampleControls{
+      width: 500px;
+   }
    
+   #cuerpoindex h6 {
+      width: 40%;
+   }
+
+
    
    /* footer */ 
    
    footer {
-       grid-area: footer;
-       display: flex;
-       justify-content: space-between;
-       background-color: rgb(32, 34, 37);
-       color:rgb(254, 254, 254);
-      }
+      grid-area: footer;
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(32, 34, 37);
+      color:rgb(254, 254, 254);
+   }
    
-    main {
+   footer div {
+      width: 120px;
+      height: 25px;
+      text-align: center;
+      font-size: large;
+      background-color: rgb(139, 9, 9);
+      color:rgb(254, 254, 254)
+   }
+
+   main {
        grid-area: main;
        color: rgb(254, 254, 254);
-    }
+   }
    
    
-    #redes {
+   #redes {
        display: flex;
    
-    }
+   }
    
-    #redes div {
+   #redes div {
        width: 50px;
        height: 50px;
        margin:10px;
-    }
+   }
    
-    #direc {
+   #direc {
         padding-left: 10px;
         padding-top: 10px;
         display: flex;
-    }
+   }
    
    
    
    /* -----------nosotros----------- */
    
-   
+   #cuerponosotros {
+      margin: 30px;
+   }
    
    /* -----------servicios----------- */
     
+
+   #cuerposervicios {
+      margin: 30px;
+   }
+
    .servicios-flex {
-   display:flex;
-   flex-direction: row;
+      display:flex;
+      flex-direction: row;
    }
    
    
@@ -335,20 +582,16 @@
       
    /* -----------contacto----------- */
    
-   .formulario-flex {
+
+   #cuerpoformulario {
+      margin: 20px 50px 20px 50px;
       display: flex;
       flex-direction: row;
-      padding-top: 20px;
-      justify-content: space-around;
-   }
-   
-   .formulario-flex article {
-      margin-top: 30px;
-      margin-bottom: 30px;
    }
    
    #camioncorreo {
-      width: 50%;
+      margin-left: 30px;
+      width: auto;
    }
 
 }
@@ -358,168 +601,4 @@
 
 
 
-
-/*Escritorio*/
-
-@media screen and (min-width: 1024px){
-   #gridAreas {
-      display: grid;
-      grid-template-areas:
-      "header header header"
-      "nav nav nav"
-      "main main main"
-      "footer footer footer";
-      grid-template-columns: 10% auto 10%;
-      grid-template-rows: 120px 50px auto 225px; 
-    }
-    
-    
-   /* general */
-   
-   body{
-      background-color: rgb(54, 57, 63);
-   }
-   
-   
-    /* header y nav */ 
-    
-    header {
-       grid-area: header;
-      }
-   
-   
-    header img {
-       padding-left: 10px;
-       padding-top: 10px;
-       width: 100px;
-    }
-   
-    nav {
-      grid-area: nav;
-      background-color: rgb(32, 34, 37);
-   
-   }
-   
-   ul {
-      display: flex;
-      justify-content: space-evenly;
-   }
-   
-   div {
-      width: 120px;
-      height: 25px;
-      text-align: center;
-      font-size: large;
-      background-color: rgb(139, 9, 9);
-      color:rgb(254, 254, 254)
-   }
-   
-   /* cuerpo index */
-   
-   #cuerpoindex {
-      margin: 20px;
-   }
-   
-   
-   
-   /* footer */ 
-   
-   footer {
-       grid-area: footer;
-       display: flex;
-       justify-content: space-between;
-       background-color: rgb(32, 34, 37);
-       color:rgb(254, 254, 254);
-      }
-   
-    main {
-       grid-area: main;
-       color: rgb(254, 254, 254);
-    }
-   
-   
-    #redes {
-       display: flex;
-   
-    }
-   
-    #redes div {
-       width: 50px;
-       height: 50px;
-       margin:10px;
-    }
-   
-    #direc {
-        padding-left: 10px;
-        padding-top: 10px;
-        display: flex;
-    }
-   
-   
-   
-   /* -----------nosotros----------- */
-   
-   
-   
-   /* -----------servicios----------- */
-    
-   .servicios-flex {
-   display:flex;
-   flex-direction: row;
-   }
-   
-   
-   .servicios-flex section {
-      padding: 20px;
-      margin: 10px;
-      border: 3px dotted rgb(32, 34, 37);
-      border-radius: 5px;
-      
-   }
-   
-   
-   
-   /* -----------vehiculos----------- */
-   
-   #gridVehiculos {
-      display: grid;
-      grid-template-areas:
-      "main main main";
-      grid-template-columns: 10% auto;
-   }
-   
-   
-   #menuFiltros {
-      padding-top:10px;
-      padding-left: 10px;
-      background-color: rgb(32, 34, 37);
-   }
-   
-   #menuFiltros span {
-      display: inline-block;
-      width: 100px;
-      height: 25px;
-      margin-bottom: 100px;
-      background-color: rgb(47, 49, 54);
-   }
-   
-   #galeria img {
-      width: 200px;
-      padding: 10px;
-      align-content: space-evenly;
-   }
-   
-   /* -----------contacto----------- */
-   
-   .formulario-flex {
-      display: flex;
-      flex-direction: row;
-      padding-top: 20px;
-      justify-content: space-around;
-   }
-   
-   .formulario-flex article {
-      padding-top: 70px;
-   }
-}
 
