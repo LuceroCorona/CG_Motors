@@ -1,0 +1,194 @@
+@media screen and (min-width: 1024px) {
+  #gridAreas {
+    display: grid;
+    grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: 120px 50px auto 225px;
+    color: #fefefe;
+    background-color: #36393f;
+    height: fit-content;
+    /* header y nav */
+    /* cuerpo index */
+    /* footer */ }
+    #gridAreas header {
+      grid-area: header; }
+      #gridAreas header img {
+        padding-left: 10px;
+        padding-top: 10px;
+        width: 100px; }
+    #gridAreas nav {
+      grid-area: nav;
+      background-color: #202225; }
+      #gridAreas nav ul {
+        display: flex;
+        justify-content: space-evenly; }
+        #gridAreas nav ul div {
+          width: 120px;
+          height: 25px;
+          margin-top: 12px;
+          text-align: center;
+          font-size: large;
+          background-color: #8b0909;
+          color: #fefefe; }
+    #gridAreas #cuerpoindex {
+      grid-area: main;
+      margin: 20px 50px 20px 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      #gridAreas #cuerpoindex h6 {
+        width: 50%; }
+    #gridAreas #carouselExampleControls {
+      width: 500px; }
+    #gridAreas footer {
+      grid-area: footer;
+      display: flex;
+      justify-content: space-between;
+      background-color: #202225;
+      color: #fefefe; }
+      #gridAreas footer div {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        text-align: center;
+        font-size: large;
+        background-color: #8b0909;
+        color: #fefefe; }
+      #gridAreas footer #redes {
+        display: flex;
+        flex-direction: row; }
+      #gridAreas footer #direc {
+        padding-left: 10px;
+        padding-top: 10px;
+        display: flex; } }
+
+@media screen and (max-width: 480px) {
+  #gridAreas {
+    display: grid;
+    grid-template-areas: "header" "nav" "main" "footer";
+    grid-template-columns: 100%; }
+  /* general */
+  body {
+    background-color: #36393f;
+    height: fit-content; }
+  /* header y nav */
+  header {
+    grid-area: header; }
+  header img {
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 100px; }
+  nav {
+    grid-area: nav;
+    background-color: #36393f; }
+  ul {
+    display: flex;
+    justify-content: space-evenly; }
+  nav div {
+    height: 25px;
+    text-align: center;
+    font-size: large;
+    background-color: #8b0909;
+    color: #fefefe; }
+  /* cuerpo index */
+  #cuerpoindex {
+    margin: 20px; }
+  #carouselExampleControls {
+    width: 100%;
+    padding-bottom: 20px; }
+  #cuerpoindex h6 {
+    width: 100%; }
+  main {
+    grid-area: main;
+    color: #fefefe; }
+  /* footer */
+  footer {
+    grid-area: footer;
+    display: flex;
+    background-color: #36393f;
+    color: #fefefe;
+    flex-direction: column-reverse; }
+  footer div {
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    font-size: large;
+    background-color: #8b0909;
+    color: #fefefe; }
+  #redes {
+    display: flex; }
+  #redes div {
+    width: 50px;
+    height: 50px;
+    margin: 10px; }
+  #direc {
+    padding-left: 10px;
+    padding-top: 10px;
+    display: flex; } }
+
+/*Tablet*/
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  #gridAreas {
+    display: grid;
+    grid-template-areas: "header" "nav" "main" "footer"; }
+  /* general */
+  body {
+    background-color: #36393f;
+    height: fit-content; }
+  /* header y nav */
+  header {
+    grid-area: header; }
+  header img {
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 100px; }
+  nav {
+    grid-area: nav;
+    background-color: #36393f; }
+  ul {
+    display: flex;
+    justify-content: space-evenly; }
+  nav div {
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    font-size: large;
+    background-color: #8b0909;
+    color: #fefefe; }
+  /* cuerpo index */
+  #cuerpoindex {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-evenly; }
+  #carouselExampleControls {
+    width: 500px; }
+  #cuerpoindex h6 {
+    width: 40%; }
+  /* footer */
+  footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    background-color: #36393f;
+    color: #fefefe; }
+  footer div {
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    font-size: large;
+    background-color: #8b0909;
+    color: #fefefe; }
+  main {
+    grid-area: main;
+    color: #fefefe; }
+  #redes {
+    display: flex; }
+  #redes div {
+    width: 50px;
+    height: 50px;
+    margin: 10px; }
+  #direc {
+    padding-left: 10px;
+    padding-top: 10px;
+    display: flex; } }
