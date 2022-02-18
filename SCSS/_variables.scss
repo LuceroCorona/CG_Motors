@@ -1,3 +1,24 @@
 $colorfondo: rgb(54, 57, 63);
 $colordiv: rgb(139, 9, 9);
 $colortipografia: rgb(254, 254, 254);
+
+$redes: (
+ olx: rgb(8, 10, 131),
+ wpp:#3fd113,
+ ig: rgb(189, 44, 189),
+ fb: blue,
+ agro: rgb(113, 255, 57)
+);
+
+@each $redes, $color in $redes {
+    .redes-#{$redes} {
+        background-color: $color;
+    }
+ }
+
+ @mixin botones($ancho,$alto,$alineacion){
+	width:$ancho;
+	height:$alto;
+    text-align: $alineacion;
+
+}
