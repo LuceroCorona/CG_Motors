@@ -1,332 +1,282 @@
 @import "variables";
 
 @media screen and (min-width: 1024px){
-    #gridAreas {
-       display: grid;
-       grid-template-areas:
-       "header header header"
-       "nav nav nav"
-       "main main main"
-       "footer footer footer";
-       grid-template-columns: 10% auto 10%;
-       grid-template-rows: 120px 50px auto 225px; 
+   #gridAreas {
+      display: grid;
+      grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "main main main"
+      "footer footer footer";
+      grid-template-columns: 10% auto 10%;
+      grid-template-rows: 120px 50px auto 225px; 
 
-       color:$colortipografia;
-       background-color: $colorfondo;
-       height: fit-content;
+      color:$colortipografia;
+      background-color: $colorfondo;
+      height: fit-content;
         
         
-        /* header y nav */ 
+      /* header y nav */ 
         
-        header {
-            grid-area: header;
-            img {
+      header {
+         grid-area: header;
+         img {
             padding-left: 10px;
             padding-top: 10px;
             width: 100px;
+         }
+     }
+
+      nav {
+         grid-area: nav;
+         background-color: $colorbandas;
+         ul {
+            display: flex;
+            justify-content: space-evenly;
+            div {
+               @include botones(120px,25px,center);
+               margin-top: 12px;
+               font-size: large;
+               background-color: $colordiv;
+               color:$colortipografia
             }
-        }
-
-        nav {
-            grid-area: nav;
-            background-color: rgb(32, 34, 37);
-            ul {
-              display: flex;
-                justify-content: space-evenly;
-            
-                div {
-                @include botones(120px,25px,center);
-                margin-top: 12px;
-                font-size: large;
-                background-color: $colordiv;
-                color:$colortipografia
-                }
-            }    
-        }
+         }    
+      }
     
-        
-
 
      /* cuerpo index */
             
-     #cuerpoindex {
+      #cuerpoindex {
          grid-area: main;
-            margin: 20px 50px 20px 50px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            h6 {
+         margin: 20px 50px 20px 50px;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         h6 {
             width: 50%;
-            }
-     }
-        #carouselExampleControls{
-        width: 500px;
-        }
+         }
+      }
+      
+      #carouselExampleControls{
+         width: 500px;
+      }
     
 
         
-        /* footer */ 
+      /* footer */ 
             
-        footer {
-            grid-area: footer;
-            display: flex;
-            justify-content: space-between;
-            background-color: rgb(32, 34, 37);
+      footer {
+         grid-area: footer;
+         display: flex;
+         justify-content: space-between;
+         background-color: rgb(32, 34, 37);
+         color:$colortipografia;
+         div {
+            @include botones(50px,50px,center);
+            margin:10px;
+            font-size: large;
             color:$colortipografia;
-            div {
-               @include botones(50px,50px,center);
-                margin:10px;
-                font-size: large;
-                color:$colortipografia;
-            }
-            #redes {
+         }
+         #redes {
             display: flex;
-                flex-direction: row;
-            }
-            #direc {
+            flex-direction: row;
+         }
+         #direc {
             padding-left: 10px;
             padding-top: 10px;
             display: flex;
-            }
-        } 
-    }
+         }
+      } 
+   }
 }
+
+
+
 
 
 
 
 @media screen and (max-width: 480px) {
+   #gridAreas {
+      display: grid;
+      grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+      grid-template-columns: 100%;
 
-    #gridAreas {
-       display: grid;
-       grid-template-areas:
-       "header"
-       "nav"
-       "main"
-       "footer";
-       grid-template-columns: 100%;
- 
-    }
- 
-    
-    /* general */
-    
-    body{
-        background-color: $colorfondo;
-       height: fit-content;
-    }
-    
-    
-    /* header y nav */ 
+      color: $colortipografia;
+      background-color: $colorfondo;
+      height: fit-content;
+
+      /* header y nav */ 
      
-    header {
-       grid-area: header;
-    }
-    
-    
-    header img {
-       padding-left: 10px;
-       padding-top: 10px;
-       width: 100px;
-    }
-    
-    nav {
-       grid-area: nav; 
-       background-color: $colorfondo;
-    
-    }
-    
-    ul {
-       display: flex;
-       justify-content: space-evenly;
-    }
-    
-    nav div {
-       height: 25px;
-       text-align: center;
-       font-size: large;
-       background-color: $colordiv;
-       color:$colortipografia
-    }
-    
-    /* cuerpo index */
-    
-    #cuerpoindex {
-       margin: 20px;
-    }
-    
-    #carouselExampleControls{
-       width: 100%;
-       padding-bottom: 20px;
-    }
-    
-    #cuerpoindex h6 {
-       width: 100%;
-    }
- 
-    main {
-       grid-area: main;
-       color: $colortipografia;
-    }
-    
-    
-    /* footer */ 
-    
-    footer {
-        grid-area: footer;
-        display: flex;
-        background-color: $colorfondo;
-        color:$colortipografia;
-        flex-direction: column-reverse;
- 
-    }
+      header {
+         grid-area: header;
+         img {
+            padding-left: 10px;
+            padding-top: 10px;
+            width: 100px;
+         }
+      }
+
       
-    footer div {
-       width: 120px;
-       height: 25px;
-       text-align: center;
-       font-size: large;
-       background-color: $colordiv;
-       color:$colortipografia
-    }
- 
-    #redes {
-        display: flex;   
-    }
-    
-    #redes div {
-        width: 50px;
-        height: 50px;
-        margin: 10px;
-    }
-    
-    #direc {
-         padding-left: 10px;
-         padding-top: 10px;
+      nav {
+         grid-area: nav; 
+         background-color: $colorfondo;
+         ul {
+            display: flex;
+            justify-content: space-evenly;
+            div {
+               @include botones(120px,25px,center);
+               font-size: large;
+               background-color: $colordiv;
+               color:$colortipografia
+            }       
+         }  
+      }
+      
+      
+      
+      /* cuerpo index */
+      
+      #cuerpoindex {
+         grid-area: main;
+         margin: 20px;
+         color: $colortipografia;
+         h6 {
+            width: 100%;
+         }   
+      }
+      
+      #carouselExampleControls{
+         width: 100%;
+         padding-bottom: 20px;
+      }
+      
+         
+      /* footer */ 
+      
+      footer {
+         grid-area: footer;
          display: flex;
-    }
+         background-color: $colorfondo;
+         color:$colortipografia;
+         flex-direction: column-reverse;
+         div {
+            @include botones(50px,50px,center);
+            font-size: large;
+            background-color: $colordiv;
+            color:$colortipografia
+         }
+         #redes {
+            display: flex;
+            flex-direction: row;
+         }
+         #direc {
+            padding-left: 10px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+         }
+      }
+   }
 }
+     
+
+
 
 
 
 /*Tablet*/
 
 @media screen and (min-width: 481px) and (max-width:1023px) {
-    #gridAreas {
-       display: grid;
-       grid-template-areas:
-       "header"
-       "nav"
-       "main"
-       "footer";
-    }
+   #gridAreas {
+      display: grid;
+      grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+      grid-template-columns: 100%;
+
+      color: $colortipografia;
+      background-color: $colorfondo;
+      height: fit-content;
+
+
+      /* header y nav */ 
      
+      header {
+         grid-area: header;
+         img {
+            padding-left: 10px;
+            padding-top: 10px;
+            width: 100px;
+         }
+      }
   
- 
- 
-     
-    /* general */
-    
-    body {
+      nav {
+        grid-area: nav;
         background-color: $colorfondo;
-       height: fit-content;
-    }
-    
- 
- 
-    /* header y nav */ 
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            div {
+               @include botones(120px,25px,center);
+               font-size: large;
+               background-color: $colordiv;
+               color:$colortipografia
+            }   
+         }
+      }
      
-    header {
-     grid-area: header;
-    }
- 
-    
-    header img {
-      padding-left: 10px;
-      padding-top: 10px;
-      width: 100px;
-    }
-    
- 
-    nav {
-       grid-area: nav;
-       background-color: $colorfondo;
-    }
-    
-    ul {
-       display: flex;
-       justify-content: space-evenly;
-    }
-    
-    nav div {
-       width: 120px;
-       height: 25px;
-       text-align: center;
-       font-size: large;
-       background-color: $colordiv;
-       color:$colortipografia
-    }
-    
-    /* cuerpo index */
-    
-    #cuerpoindex {
-       display: flex;
-       flex-direction: row;
-       margin: 20px;
-       justify-content: space-evenly;
-    }
-    
-    #carouselExampleControls{
-       width: 500px;
-    }
-    
-    #cuerpoindex h6 {
-       width: 40%;
-    }
- 
- 
-    
-    /* footer */ 
-    
-    footer {
-       grid-area: footer;
-       display: flex;
-       justify-content: space-between;
-       background-color: $colorfondo;
-       color:$colortipografia;
-    }
-    
-    footer div {
-       width: 120px;
-       height: 25px;
-       text-align: center;
-       font-size: large;
-       background-color: $colordiv;
-       color:$colortipografia
-    }
- 
-    main {
+     /* cuerpo index */
+     
+     #cuerpoindex {
+       color: $colortipografia;
         grid-area: main;
-        color: $colortipografia;
-    }
-    
-    
-    #redes {
         display: flex;
-    
-    }
-    
-    #redes div {
-        width: 50px;
-        height: 50px;
-        margin:10px;
-    }
-    
-    #direc {
-         padding-left: 10px;
-         padding-top: 10px;
-         display: flex;
-    }
-}
+        flex-direction: row;
+        margin: 20px;
+        justify-content: space-evenly;
+        h6 {
+          width: 40%;
+         }
+      }
+     
+     #carouselExampleControls{
+        width: 500px;
+      }
+     
+
+      /* footer */ 
+     
+     footer {
+        grid-area: footer;
+        display: flex;
+        justify-content: space-between;
+        background-color: $colorfondo;
+        color:$colortipografia;
+        div {
+            @include botones(50px,50px,center);
+            font-size: large;
+            background-color: $colordiv;
+            color:$colortipografia
+         }
+         #redes {
+            display: flex;
+            flex-direction: row;
+         }
+        #direc {
+            padding-left: 10px;
+            padding-top: 10px;
+            display: flex;
+        }   
+      }
+   }
+}  
 
 @import "variables";
